@@ -14,16 +14,16 @@ const ProductGrid = () => {
   }, [sortOption]);
 
   return (
-    <div className="p-4">
+    <div className="p-4 bg-light min-h-screen">
       <SortDropdown onChange={setSortOption} />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
         {products.map((product, index) => (
           <ProductCard key={product.id} product={product} ref={index === products.length - 1 ? lastElementRef : null} />
         ))}
       </div>
-      {loading && <p className="text-center mt-4">Loading...</p>}
-      {!hasMore && !loading && <p className="text-center mt-4">~ end of catalogue ~</p>}
-      {error && <p className="text-center mt-4 text-red-500">{error}</p>}
+      {loading && <p className="text-center mt-6 text-gray-700">Loading...</p>}
+      {!hasMore && !loading && <p className="text-center mt-6 text-gray-700">~ end of catalogue ~</p>}
+      {error && <p className="text-center mt-6 text-red-500">{error}</p>}
     </div>
   );
 };
