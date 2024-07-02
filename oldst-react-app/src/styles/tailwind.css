@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: "josefins";
+    src: url("../assets/fonts/JosefinSans.ttf") format("truetype");
+  }
+
+@font-face {
   font-family: "contax";
   src: url("../assets/fonts/contax.ttf") format("truetype");
 }
@@ -16,6 +21,10 @@
 /* Custom styles */
 .font-lequire {
   font-family: "lequire";
+}
+
+.font-josefins {
+ font-family: "josefins";
 }
 
 .font-contax {
