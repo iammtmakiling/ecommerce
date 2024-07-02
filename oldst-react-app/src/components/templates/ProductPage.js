@@ -1,13 +1,14 @@
 import React from 'react';
 import ProductGrid from '../organisms/ProductGrid';
 import Navbar from '../organisms/Navbar';
+import Divider from '../atoms/Divider';
 
 const ProductPage = () => (
   <div className="flex flex-col items-center justify-center min-h-screen bg-white dark:bg-dark">
     <Navbar />
-    <hr className="border-gray-200 mb-[2rem] w-full" />
+    <Divider margin="mb-[2rem]"/>
     <div className="text-[3rem] font-josefins text-center mt-[-0.5rem]">PRODUCTS</div>
-    <hr className="border-gray-200 mt-[2rem] w-full" />
+    <Divider margin="mt-[2rem]"/>
     <div className="container mx-auto px-[1rem]">
       <ProductGrid />
     </div>
