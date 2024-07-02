@@ -10,10 +10,6 @@ const ProductGrid = () => {
   const { products, loading, error, hasMore, fetchMore } = useFetchProducts(sortOption);
   const { lastElementRef } = useInfiniteScroll(hasMore, loading, fetchMore);
 
-  useEffect(() => {
-    // No need to manually reset page, useFetchProducts handles it
-  }, [sortOption]);
-
   return (
     <div className="bg-white dark:bg-dark min-h-screen w-full">
       <div className='flex flex-row justify-between items-center mx-[8rem]'>
@@ -25,7 +21,7 @@ const ProductGrid = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
           {products.map((product, index) => (
             <ProductCard 
-              key={product.id} 
+              key={product.id} // Use a unique key for each product
               product={product} 
               ref={index === products.length - 1 ? lastElementRef : null} 
             />

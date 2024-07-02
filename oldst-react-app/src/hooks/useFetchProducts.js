@@ -11,6 +11,8 @@ const useFetchProducts = (sortOption) => {
   useEffect(() => {
     setProducts([]); // Reset products when sortOption changes
     setPage(0); // Reset page number when sortOption changes
+    setHasMore(true); // Reset hasMore to true when sortOption changes
+   console.log("hey");
   }, [sortOption]);
 
   useEffect(() => {
@@ -22,7 +24,7 @@ const useFetchProducts = (sortOption) => {
         const response = await axios.get('http://localhost:8000/products', {
           params: {
             _page: page + 1,
-            _limit: 12, // Change limit as per your need
+            _limit: 12,
             _sort: sortOption,
           },
         });

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import formatDate from '../../utils/formatDate';
+import Thumbnail from '../atoms/Thumbnail';
 
 const ProductCard = React.forwardRef(({ product }, ref) => {
   return (
@@ -12,15 +13,5 @@ const ProductCard = React.forwardRef(({ product }, ref) => {
     </div>
   );
 });
-
-ProductCard.propTypes = {
-  product: PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    title: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
-    thumbnail: PropTypes.string.isRequired,
-    date: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(Date)]).isRequired,
-  }).isRequired,
-};
 
 export default ProductCard;
