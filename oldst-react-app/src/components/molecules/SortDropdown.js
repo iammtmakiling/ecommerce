@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const SortDropdown = ({ onChange }) => {
   return (
-    <div className="flex flex-row justify-start items-center mx-[8rem] font-josefins">
+    <div className="flex flex-row justify-start items-center font-josefins">
       <p className="text-[1.2rem]">Sort by:</p>
       <select
         onChange={(e) => onChange(e.target.value)}

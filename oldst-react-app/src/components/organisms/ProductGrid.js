@@ -16,7 +16,10 @@ const ProductGrid = () => {
 
   return (
     <div className="bg-white dark:bg-dark min-h-screen w-full">
-    <SortDropdown onChange={setSortOption} />
+    <div className='flex flex-row justify-between items-center mx-[8rem]'>
+      <SortDropdown onChange={setSortOption} />
+      <p className='font-josefins text-[1.2rem] italic'>{products.length} products</p>
+    </div>
     <Divider margin="my-4" />
     <div className="container mx-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
