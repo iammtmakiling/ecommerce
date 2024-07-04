@@ -6,7 +6,7 @@
         "discountPercentage": 12.96,
         "rating": 4.69,
         "description": "An apple mobile which is nothing like apple",
-        "thumbnail": "https://dummyjson.com/image/i/products/1/thumbnail.jpg"
+        "thumbnail": "assets/img/1.jpg"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "discountPercentage": 17.94,
         "rating": 4.44,
         "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-        "thumbnail": "https://dummyjson.com/image/i/products/2/thumbnail.jpg"
+        "thumbnail": "assets/img/2.webp"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "discountPercentage": 15.46,
         "rating": 4.09,
         "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
-        "thumbnail": "https://dummyjson.com/image/i/products/3/thumbnail.jpg"
+        "thumbnail": "assets/img/3.webp"
     },
     {
         "id": 4,
@@ -168,7 +168,7 @@
         "discountPercentage": 10.68,
         "rating": 4.42,
         "description": "Product name: rorec collagen hyaluronic acid white face serum riceNet weight: 15 m",
-        "thumbnail": "https://dummyjson.com/image/i/products/19/thumbnail.jpg"
+        "thumbnail": "assets/img/19.jpg"
     },
     {
         "id": 20,
@@ -213,7 +213,7 @@
         "discountPercentage": 16.8,
         "rating": 4.94,
         "description": "original fauji cereal muesli 250gm box pack original fauji cereals muesli fruit nuts flakes breakfast cereal break fast faujicereals cerels cerel foji fouji",
-        "thumbnail": "https://dummyjson.com/image/i/products/24/thumbnail.jpg"
+        "thumbnail": "assets/img/24.jpg"
     },
     {
         "id": 25,
@@ -285,7 +285,7 @@
         "discountPercentage": 15.59,
         "rating": 4.74,
         "description": "Ratttan Outdoor furniture Set Waterproof  Rattan Sofa for Coffe Cafe",
-        "thumbnail": "https://dummyjson.com/image/i/products/32/thumbnail.jpg"
+        "thumbnail": "assets/img/32.png"
     },
     {
         "id": 33,
@@ -321,7 +321,7 @@
         "discountPercentage": 10.89,
         "rating": 4.26,
         "description": "Cotton Solid Color Professional Wear Sleeve Shirt Womens Work Blouses Wholesale Clothing Casual Plain Custom Top OEM Customized",
-        "thumbnail": "https://dummyjson.com/image/i/products/36/thumbnail.jpg"
+        "thumbnail": "assets/img/36.webp"
     },
     {
         "id": 37,
@@ -330,7 +330,7 @@
         "discountPercentage": 12.05,
         "rating": 4.52,
         "description": "PACK OF 3 CAMISOLES ,VERY COMFORTABLE SOFT COTTON STUFF, COMFORTABLE IN ALL FOUR SEASONS",
-        "thumbnail": "https://dummyjson.com/image/i/products/37/thumbnail.jpg"
+        "thumbnail": "assets/img/37.webp"
     },
     {
         "id": 38,
@@ -339,7 +339,7 @@
         "discountPercentage": 11.12,
         "rating": 4.8,
         "description": "sublimation plain kids tank tops wholesale",
-        "thumbnail": "https://dummyjson.com/image/i/products/38/thumbnail.jpg"
+        "thumbnail": "assets/img/38.webp"
     },
     {
         "id": 39,
@@ -348,7 +348,7 @@
         "discountPercentage": 17.2,
         "rating": 4.55,
         "description": "2021 Custom Winter Fall Zebra Knit Crop Top Women Sweaters Wool Mohair Cos Customize Crew Neck Women' S Crop Top Sweater",
-        "thumbnail": "https://dummyjson.com/image/i/products/39/thumbnail.jpg"
+        "thumbnail": "assets/img/39.webp"
     },
     {
         "id": 40,
@@ -357,7 +357,7 @@
         "discountPercentage": 13.39,
         "rating": 4.91,
         "description": "women winter clothes thick fleece hoodie top with sweat pantjogger women sweatsuit set joggers pants two piece pants set",
-        "thumbnail": "https://dummyjson.com/image/i/products/40/thumbnail.jpg"
+        "thumbnail": "assets/img/40.jpg"
     },
     {
         "id": 41,
@@ -375,7 +375,7 @@
         "discountPercentage": 15.37,
         "rating": 4.05,
         "description": "FABRIC: LILEIN CHEST: 21 LENGHT: 37 TROUSER: (38) :ARABIC LILEIN",
-        "thumbnail": "https://dummyjson.com/image/i/products/42/thumbnail.jpg"
+        "thumbnail": "assets/img/42.jpg"
     },
     {
         "id": 43,
@@ -411,7 +411,7 @@
         "discountPercentage": 16.96,
         "rating": 4.14,
         "description": "Close: Lace, Style with bottom: Increased inside, Sole Material: Rubber",
-        "thumbnail": "https://dummyjson.com/image/i/products/46/thumbnail.jpg"
+        "thumbnail": "assets/img/46.png"
     },
     {
         "id": 47,
@@ -420,7 +420,7 @@
         "discountPercentage": 10.37,
         "rating": 4.19,
         "description": "Synthetic Leather Casual Sneaker shoes for Women/girls Sneakers For Women",
-        "thumbnail": "https://dummyjson.com/image/i/products/47/thumbnail.jpeg"
+        "thumbnail": "assets/img/47.jpg"
     },
     {
         "id": 48,
@@ -429,7 +429,7 @@
         "discountPercentage": 10.83,
         "rating": 4.02,
         "description": "Features: Flip-flops, Mid Heel, Comfortable, Striped Heel, Antiskid, Striped",
-        "thumbnail": "https://dummyjson.com/image/i/products/48/thumbnail.jpg"
+        "thumbnail": "assets/img/48.webp"
     },
     {
         "id": 49,
@@ -447,7 +447,7 @@
         "discountPercentage": 16.87,
         "rating": 4.33,
         "description": "2020 New Arrivals Genuine Leather Fashion Trend Platform Summer Women Shoes",
-        "thumbnail": "https://dummyjson.com/image/i/products/50/thumbnail.jpg"
+        "thumbnail": "assets/img/50.jpg"
     },
     {
         "id": 51,
@@ -474,7 +474,7 @@
         "discountPercentage": 7.54,
         "rating": 4.89,
         "description": "Brand: vintage Apparel ,Export quality",
-        "thumbnail": "https://dummyjson.com/image/i/products/53/thumbnail.jpg"
+        "thumbnail": "assets/img/53.jpg"
     },
     {
         "id": 54,
@@ -501,7 +501,7 @@
         "discountPercentage": 12.57,
         "rating": 4.38,
         "description": "Gender: Men , Colors: Same as DisplayedCondition: 100% Brand New",
-        "thumbnail": "https://dummyjson.com/image/i/products/56/thumbnail.jpg"
+        "thumbnail": "assets/img/56.png"
     },
     {
         "id": 57,
@@ -519,7 +519,7 @@
         "discountPercentage": 12,
         "rating": 4.41,
         "description": "Pattern Type: Solid, Material: PU, Toe Shape: Pointed Toe ,Outsole Material: Rubber",
-        "thumbnail": "https://dummyjson.com/image/i/products/58/thumbnail.jpg"
+        "thumbnail": "assets/img/58.webp"
     },
     {
         "id": 59,
@@ -537,7 +537,7 @@
         "discountPercentage": 7.55,
         "rating": 4.55,
         "description": "High Quality ,Stylish design ,Comfortable wear ,FAshion ,Durable",
-        "thumbnail": "https://dummyjson.com/image/i/products/60/thumbnail.jpg"
+        "thumbnail": "assets/img/58.webp"
     },
     {
         "id": 61,
@@ -555,7 +555,7 @@
         "discountPercentage": 3.15,
         "rating": 4.05,
         "description": "Watch Crown With Environmental IPS Bronze Electroplating; Display system of 12 hours",
-        "thumbnail": "https://dummyjson.com/image/i/products/62/thumbnail.jpg"
+        "thumbnail": "assets/img/62.webp"
     },
     {
         "id": 63,
@@ -582,7 +582,7 @@
         "discountPercentage": 17.79,
         "rating": 4.79,
         "description": "Stylish Watch For Man (Luxury) Classy Men's Stainless Steel Wrist Watch - Box Packed",
-        "thumbnail": "https://dummyjson.com/image/i/products/65/thumbnail.webp"
+        "thumbnail": "assets/img/65.webp"
     },
     {
         "id": 66,
@@ -591,7 +591,7 @@
         "discountPercentage": 3.23,
         "rating": 4.79,
         "description": "Elegant design, Stylish ,Unique & Trendy,Comfortable wear",
-        "thumbnail": "https://dummyjson.com/image/i/products/66/thumbnail.jpg"
+        "thumbnail": "assets/img/66.webp"
     },
     {
         "id": 67,
@@ -609,7 +609,7 @@
         "discountPercentage": 9.03,
         "rating": 4.55,
         "description": "Stylish Luxury Digital Watch For Girls / Women - Led Smart Ladies Watches For Girls",
-        "thumbnail": "https://dummyjson.com/image/i/products/68/thumbnail.webp"
+        "thumbnail": "assets/img/68.webp"
     },
     {
         "id": 69,
@@ -627,7 +627,7 @@
         "discountPercentage": 8.98,
         "rating": 4.08,
         "description": "Fashion Skmei 1830 Shell Dial Stainless Steel Women Wrist Watch Lady Bracelet Watch Quartz Watches Ladies",
-        "thumbnail": "https://dummyjson.com/image/i/products/70/thumbnail.jpg"
+        "thumbnail": "assets/img/70.webp"
     },
     {
         "id": 71,
@@ -636,7 +636,7 @@
         "discountPercentage": 14.65,
         "rating": 4.71,
         "description": "LouisWill Women Shoulder Bags Long Clutches Cross Body Bags Phone Bags PU Leather Hand Bags Large Capacity Card Holders Zipper Coin Purses Fashion Crossbody Bags for Girls Ladies",
-        "thumbnail": "https://dummyjson.com/image/i/products/71/thumbnail.jpg"
+        "thumbnail": "assets/img/71.jpg"
     },
     {
         "id": 72,
@@ -672,7 +672,7 @@
         "discountPercentage": 14.87,
         "rating": 4.93,
         "description": "Seven Pocket Women Bag Handbags Lady Shoulder Crossbody Bag Female Purse Seven Pocket Bag",
-        "thumbnail": "https://dummyjson.com/image/i/products/75/thumbnail.jpg"
+        "thumbnail": "assets/img/75.webp"
     },
     {
         "id": 76,
@@ -681,7 +681,7 @@
         "discountPercentage": 13.57,
         "rating": 4.61,
         "description": "Jewelry Type:RingsCertificate Type:NonePlating:Silver PlatedShapeattern:noneStyle:CLASSICReligious",
-        "thumbnail": "https://dummyjson.com/image/i/products/76/thumbnail.jpg"
+        "thumbnail": "assets/img/76.jpg"
     },
     {
         "id": 77,
@@ -780,7 +780,7 @@
         "discountPercentage": 11.3,
         "rating": 4.54,
         "description": "Both Heat and Cool Purpose, Temperature control range; -50 to +110, Temperature measurement accuracy; 0.1, Control accuracy; 0.1",
-        "thumbnail": "https://dummyjson.com/image/i/products/87/thumbnail.jpg"
+        "thumbnail": "assets/img/87.jpg"
     },
     {
         "id": 88,
@@ -843,7 +843,7 @@
         "discountPercentage": 3.85,
         "rating": 4.06,
         "description": "new arrivals Fashion motocross goggles motorcycle motocross racing motorcycle",
-        "thumbnail": "https://dummyjson.com/image/i/products/94/thumbnail.webp"
+        "thumbnail": "assets/img/94.jpg"
     },
     {
         "id": 95,
@@ -852,7 +852,7 @@
         "discountPercentage": 17.67,
         "rating": 4.21,
         "description": "Wholesale cargo lashing Belt Tie Down end Ratchet strap customized strap 25mm motorcycle 1500kgs with rubber handle",
-        "thumbnail": "https://dummyjson.com/image/i/products/95/thumbnail.jpg"
+        "thumbnail": "assets/img/95.jpg"
     },
     {
         "id": 96,
