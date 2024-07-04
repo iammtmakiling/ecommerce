@@ -1,52 +1,61 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
+/**
+ * Custom hook to fetch and sort products from the local database with pagination support.
+ * @param {string} sortOption - The option by which to sort the products ('title', 'price', 'rating').
+ * @returns {object} - Contains products, loading state, error state, sorting state, and pagination state.
+ */
 const useFetchProducts = (sortOption) => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
-  const [page, setPage] = useState(0);
 
   useEffect(() => {
-    setProducts([]); // Reset products when sortOption changes
-    setPage(0); // Reset page number when sortOption changes
-    setHasMore(true); // Reset hasMore to true when sortOption changes
-   console.log("hey");
-  }, [sortOption]);
+    setLoading(true);
+    setError(null);
+    setProducts([]);
+    setPage(1);
 
-  useEffect(() => {
     const fetchProducts = async () => {
-      setLoading(true);
-      setError(null);
-
       try {
-        const response = await axios.get('http://localhost:8000/products', {
-          params: {
-            _page: page + 1,
-            _limit: 12,
-            _sort: sortOption,
-          },
-        });
-
-        const newProducts = response.data;
-        setProducts((prevProducts) => [...prevProducts, ...newProducts]);
-        setHasMore(newProducts.length > 0);
-      } catch (error) {
-        setError(error.message);
+        const response = await axios.get(`http://localhost:8000/products?_sort=${sortOption}&_page=1&_limit=20`);
+        setProducts(response.data);
+        setHasMore(response.data.length > 0);
+      } catch (err) {
+        setError('Failed to fetch products');
       } finally {
         setLoading(false);
       }
     };
 
     fetchProducts();
-  }, [sortOption, page]);
+  }, [sortOption]);
 
-  const fetchMore = () => {
-    setPage((prevPage) => prevPage + 1);
-  };
+  useEffect(() => {
+    if (page === 1) return;
 
-  return { products, loading, error, hasMore, fetchMore };
+    setLoading(true);
+    setError(null);
+
+    const fetchMoreProducts = async () => {
+      try {
+        const response = await axios.get(`http://localhost:8000/products?_sort=${sortOption}&_page=${page}&_limit=20`);
+        setProducts((prev) => [...prev, ...response.data]);
+        setHasMore(response.data.length > 0);
+      } catch (err) {
+        setError('Failed to fetch products');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchMoreProducts();
+  }, [page, sortOption]);
+
+  return { products, loading, error, hasMore, setPage };
 };
 
 export default useFetchProducts;
