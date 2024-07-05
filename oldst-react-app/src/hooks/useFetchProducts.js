@@ -58,17 +58,31 @@ const useFetchProducts = (sortOption) => {
     fetchMoreProducts();
   }, [page, sortOption]);
 
-  // Effect to handle preemptive fetching
+  // Effect to handle preemptive fetching with debouncing
   useEffect(() => {
     const handleScroll = () => {
-      if (window.innerHeight + document.documentElement.scrollTop < document.documentElement.offsetHeight - 1000) return;
-      if (!loading && hasMore) {
-        setPage((prevPage) => prevPage + 1);
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.offsetHeight;
+
+      if (windowHeight + scrollTop >= documentHeight - 2000) {
+        if (!loading && hasMore) {
+          setPage((prevPage) => prevPage + 1);
+        }
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    let debounceTimeout;
+    const debouncedHandleScroll = () => {
+      clearTimeout(debounceTimeout);
+      debounceTimeout = setTimeout(handleScroll, 100);
+    };
+
+    window.addEventListener('scroll', debouncedHandleScroll);
+    return () => {
+      clearTimeout(debounceTimeout);
+      window.removeEventListener('scroll', debouncedHandleScroll);
+    };
   }, [loading, hasMore]);
 
   return { products, loading, error, hasMore, setPage };
