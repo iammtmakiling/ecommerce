@@ -7,12 +7,14 @@ import axios from 'axios';
  * @returns {object} - Contains products, loading state, error state, sorting state, and pagination state.
  */
 const useFetchProducts = (sortOption) => {
+  // States
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
 
+  // Effect to handle initial fetch and sorting
   useEffect(() => {
     setLoading(true);
     setError(null);
@@ -34,8 +36,9 @@ const useFetchProducts = (sortOption) => {
     fetchProducts();
   }, [sortOption]);
 
+  // Effect to fetch more products when the page changes
   useEffect(() => {
-    if (page === 1) return;
+    if (page === 1) return; // Skip initial fetch
 
     setLoading(true);
     setError(null);
@@ -54,6 +57,19 @@ const useFetchProducts = (sortOption) => {
 
     fetchMoreProducts();
   }, [page, sortOption]);
+
+  // Effect to handle preemptive fetching
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerHeight + document.documentElement.scrollTop < document.documentElement.offsetHeight - 1000) return;
+      if (!loading && hasMore) {
+        setPage((prevPage) => prevPage + 1);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [loading, hasMore]);
 
   return { products, loading, error, hasMore, setPage };
 };
