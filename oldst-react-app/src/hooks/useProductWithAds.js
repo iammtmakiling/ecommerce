@@ -1,21 +1,35 @@
 import { useState, useEffect } from 'react';
 
+/**
+ * Generates a random query parameter to avoid image caching.
+ * @returns {number} A random number.
+ */
 const generateRandomQueryParam = () => {
-  return Math.floor(Math.random() * 10000); // Generate a random number
+  return Math.floor(Math.random() * 10000);
 };
 
+/**
+ * Generates a random ad URL, ensuring it is different from the previous ad.
+ * @param {string} previousAd - The URL of the previous ad.
+ * @returns {string} A new random ad URL.
+ */
 const getRandomAdUrl = (previousAd) => {
   let randomIndex;
   let newAd;
 
   do {
-    randomIndex = Math.floor(Math.random() * 10) + 1; // Ensure randomIndex is between 1 and 10
+    randomIndex = Math.floor(Math.random() * 10) + 1;
     newAd = `https://unsplash.it/320/200?image=${randomIndex}&r=${generateRandomQueryParam()}`;
   } while (newAd === previousAd);
 
   return newAd;
 };
 
+/**
+ * Custom hook to enhance products with ads.
+ * @param {Array} products - The array of products.
+ * @returns {Array} The array of products interspersed with ads.
+ */
 const useProductWithAds = (products) => {
   const [productsWithAds, setProductsWithAds] = useState([]);
   const [previousAd, setPreviousAd] = useState('');
