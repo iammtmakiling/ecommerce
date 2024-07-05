@@ -5,9 +5,6 @@ import StarRating from '../atoms/StarRating';
 import Divider from '../atoms/Divider';
 
 const ProductCard = React.forwardRef(({ product }, ref) => {
-  console.log('Thumbnail src:', product.thumbnail);
-  console.log('Thumbnail alt:', product.title);
-
   // Directly use the path from the public folder
   const imageSrc = process.env.PUBLIC_URL + product.thumbnail;
 
